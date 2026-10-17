@@ -1,0 +1,317 @@
+.main_content {
+    width: 100%;
+}
+
+.main_content .section {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.section .section_tag {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.section .article {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 2.2rem;
+    color: var(--text-primary);
+    line-height: 39px;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    letter-spacing: 1px;
+}
+
+.services_cards-container {
+    width: 100%;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.services_cards-container .bg_glow {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    filter: blur(2px);
+    z-index: 0;
+    opacity: .9;
+}
+
+.services_cards-container .bg_glow1 {
+    background: #7418F5;
+    background: linear-gradient(150deg, rgba(116, 24, 245, 1) 0%, rgba(93, 20, 196, 1) 50%, rgba(62, 3, 145, 1) 100%);
+    left: 50%;
+    top: 50%;
+    transform: rotate(-30deg);
+    animation: bg_glow1 7s cubic-bezier(.46,.03,.52,.96) infinite alternate;
+
+}
+
+.services_cards-container .bg_glow2 {
+    width: 120px;
+    height: 120px;
+    background: #189df5;
+    background: linear-gradient(150deg, rgba(24, 157, 245, 1) 0%, rgba(14, 123, 196, 1) 50%, rgba(10, 91, 145, 1) 100%);
+    left: 20%;
+    top: 20%;
+    transform: rotate(40deg);
+    animation: bg_glow2 7s cubic-bezier(.46,.03,.52,.96) infinite alternate;
+}
+
+.services_cards-container .bg_glow3 {
+    width: 80px;
+    height: 80px;
+    background: #de3c2a;
+    background: linear-gradient(150deg, rgba(222, 60, 42, 1) 0%, rgba(214, 63, 17, 1) 50%, rgba(222, 119, 22, 1) 100%);
+    left: 20%;
+    top: 80%;
+    transform: rotate(40deg);
+    animation: bg_glow3 7s cubic-bezier(.46,.03,.52,.96) infinite alternate;
+}
+
+
+.services_card {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: var(--bg-card);
+    backdrop-filter: blur(15px);
+    border-radius: 6px;
+    border: 1px solid #dbdbdb96;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+}
+
+.lord_icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.lord_icon-container lord-icon {
+    width: 150px;
+    height: 150px;
+}
+
+.services_card .services_card-title {
+    font-size: 1.8rem;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+}
+
+.services_card .services_card-description {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+    line-height: 27px;
+}
+
+/* PROJECTS SECTION */
+
+
+.projects_section {
+    width: 100%;
+}
+
+.projects_cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.projects_card {
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #dbdbdb96;
+    background-color: var(--bg-card);
+    box-shadow: 0px 0px 15px #ececec46;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.projects_card::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: -40px; 
+    width: 120px;
+    height: 120px;
+    
+    background: radial-gradient(circle, rgba(116, 24, 245, 0.5) 0%, rgba(116, 24, 245, 0) 70%);
+    
+    filter: blur(15px);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.projects_card::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: -40px; 
+    width: 120px;
+    height: 120px;
+    
+    background: radial-gradient(circle, rgba(8, 57, 192, 0.5) 0%, rgba(24, 76, 245, 0) 70%);
+    
+    filter: blur(15px);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.browser-header {
+    width: 100%;
+    padding: 10px;
+    background-color: #432a618a;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transition: background .2s ease;
+}
+
+.dot_red {
+    background-color: #9b3333;
+}
+
+.dot_red:hover {
+    background-color: #6d1616;
+}
+
+.dot_yellow {
+    background-color: #e0e268;
+}
+
+.dot_yellow:hover {
+    background-color: #aaac4d;
+}
+
+.dot_green {
+    background-color: #277a25;
+}
+
+.dot_green:hover {
+    background-color: #1a5719;
+}
+
+.projects_card-img-container {
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.projects_title {
+    color: var(--text-primary);
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.projects_text-container {
+    margin-bottom: 20px;
+}
+
+.projects_description {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.projects_card-link {
+    font-size: 1.1rem;
+    color: var(--text-primary);
+    background-color: var(--accent-purple);
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background-color .2s ease;
+}
+
+.projects_card-link:hover {
+    background-color: #6d42d1;
+}
+
+.progress {
+    pointer-events: none;
+}
+
+/* ABOUT ME SECTION */
+
+.aboutme_section {
+    width: 100%;
+}
+
+.aboutme_description {
+    max-width: 800px;
+    justify-content: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    line-height: 27px;
+}
+
+/* Media Queries */
+
+@media (min-width: 720px) {
+    .main_content .section {
+        padding: 50px;
+    }
+}
+
+@media (min-width: 900px) {
+    .services_cards-container {
+        /* grid-template-rows: 1fr 1fr; */
+        grid-template-columns: repeat(2, 1fr);
+        align-items: stretch;
+    }
+
+    .services_card {
+        height: 100%;
+    }
+
+    .services_cards-container .bg_glow1 {
+        width: 140px;
+        height: 140px;
+    }
+    
+    .services_cards-container .bg_glow2 {
+        width: 160px;
+        height: 160px;
+    }
+
+    .services_cards-container .bg_glow3 {
+        width: 120px;
+        height: 120px;
+    }
+}

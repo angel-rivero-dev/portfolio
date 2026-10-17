@@ -1,0 +1,18 @@
+@import url(variables.css);
+@import url(reset.css);
+
+
+@import url(header.css);
+@import url(container.css);
+@import url(footer.css);
+@import url(animations.css);
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden !important;
+}
+
+body {
+    background-color: var(--bg-main);
+    font-family: var(--font-primary);
+}

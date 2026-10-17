@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Rivero - Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Reproductor ligero para animaciones Lottie / Lordicon -->
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <!-- Particulas -->
+    <script src="./js/particles.min.js"></script>
+</head>
+<body>
+    <header class="site_header">
+        <div id="particles-js"></div>
+        <div class="container_navbar">
+            <div class="logo"><h3 class="name">Angel Rivero</h3></div>
+            <nav class="navbar">
+                <a href="#" class="nav_link">Inicio</a>
+                <a href="#services" class="nav_link">Servicios</a>
+                <a href="#projects" class="nav_link">Proyectos</a>
+                <a href="#aboutme" class="nav_link">Sobre mi</a>
+            </nav>
+            <a href="#" class="btn_quote">Cotizar Proyecto</a>
+        </div>
+
+        <div class="main_header">
+            <div class="container_header-titles">
+                <h1 class="header_title">Desarrollo web a medida y optimizado.</h1>
+                <h2 class="subtitle">Especializado en maquetación accesible, diseño de interfaz enfocado en conversión y optimización de velocidad en la nube.</h2>
+            </div>
+            <div class="container_header-buttons">
+                <a href="#projects" class="btn_proyects">Ver Proyectos</a>
+                <a href="#" class="btn_whatsapp">Contactar por Whatsapp</a>
+            </div>
+        </div>
+    </header>
+    <main class="main_content">
+        <section id="services" class="section services_section">
+            <span class="section_tag">Servicios</span>
+            <article class="article services_article">
+                <h2 class="title services_title">Soluciones web directas, rápidas y de alto rendimiento</h2>
+                <p class="text services_description">No creamos sitios web gigantes e inflados. Nos especializamos en lo que realmente genera resultados: landing pages de alta conversión optimizadas al milímetro para tu negocio</p>
+            </article>
+            <div class="services_cards-container">
+                <div class="bg_glow bg_glow1"></div>
+                <div class="bg_glow bg_glow2"></div>
+                <div class="bg_glow bg_glow3"></div>
+                <article class="services_card" data-aos="fade-right">
+                    <div class="lord_icon-container">
+                        <lord-icon
+                            src="assets/icons/desktop.json"
+                            trigger="loop",
+                            delay="2000"
+                            colors="primary:#F3F4F6,secondary:#8B5CF6">
+                        </lord-icon>
+                    </div>
+                    <h3 class="services_card-title">Landing Pages de Alta Conversión</h3>
+                    <p class="services_card-description">Diseños exclusivos desarrollados desde cero en código puro (sin plantillas pesadas). Enfocados 100% en guiar al usuario hacia la acción: captar leads o vender tu producto.</p>
+                </article>
+                <article class="services_card" data-aos="fade-left">
+                    <div class="lord_icon-container">
+                        <lord-icon
+                            src="assets/icons/trending.json"
+                            trigger="loop"
+                            delay="2000"
+                            colors="primary:#8B5CF6">
+                        </lord-icon>
+                    </div>
+                    <h3 class="services_card-title">Optimización Extrema & SEO</h3>
+                    <p class="services_card-description">Estructura web optimizada para motores de búsqueda desde la primera línea de código. Velocidad de carga ultrarrápida que garantiza la mejor experiencia de usuario y posicionamiento orgánico.</p>
+                </article>
+                <article class="services_card" data-aos="fade-right">
+                    <div class="lord_icon-container">
+                        <lord-icon
+                            src="assets/icons/cloud.json"
+                            trigger="loop"
+                            delay="2000"
+                            colors="primary:#F3F4F6,secondary:#8B5CF6">
+                        </lord-icon>
+                    </div>
+                    <h3 class="services_card-title">Dominio y Hosting Incluidos</h3>
+                    <p class="services_card-description">Olvídate de configuraciones técnicas complejas. Nos encargamos de gestionar y configurar tu dominio y el alojamiento web para que tu proyecto esté en línea sin fricciones.</p>
+                </article>
+                <article class="services_card" data-aos="fade-left">
+                    <div class="lord_icon-container">
+                        <lord-icon
+                            src="assets/icons/wrench.json"
+                            trigger="loop",
+                            delay="2000"
+                            colors="primary:#F3F4F6,secondary:#8B5CF6">
+                        </lord-icon>
+                    </div>
+                    <h3 class="services_card-title">Mantenimiento Continuo</h3>
+                    <p class="services_card-description">Tu web siempre segura, actualizada y funcionando al 100%. Monitoreo constante y soporte técnico directo para que tú solo te preocupes por hacer crecer tu negocio.</p>
+                </article>
+            </div>
+        </section>
+        <section id="projects" class="section projects_section">
+            <span class="section_tag">Proyectos</span>
+            <article class="article projects_article">
+                <h2 class="title">Proyectos destacados y trabajo reciente</h2>
+                <p class="text">Una selección de proyectos reales desarrollados con código limpio, alto rendimiento y enfoque en resultados.</p>
+                <div class="projects_cards-container">
+                    <article class="projects_card" data-aos="fade-up">
+                        <div class="browser-header">
+                            <button class="dot dot_red"></button>
+                            <button class="dot dot_yellow"></button>
+                            <button class="dot dot_green"></button>
+                        </div>
+                        <div class="projects_card-img-container"><img src="./assets/images/mariachi2.png" class="projects_card-img" alt="Web Mariachi"></div>
+                        <div class="projects_text-container">
+                            <h3 class="projects_title">Mariachi Raza Mexicana</h3>
+                            <p class="projects_description">Landing page optimizada para contratación rápida de eventos. Diseñada con alta velocidad de carga, llamadas a la acción directas hacia WhatsApp y SEO local integrado.</p>
+                        </div>
+                        <a href="https://mariachirazamexicana.com" target="_blank" class="projects_card-link">Ver Web</a>
+                    </article>
+                    <article class="projects_card" data-aos="fade-up">
+                        <div class="browser-header">
+                            <button class="dot dot_red"></button>
+                            <button class="dot dot_yellow"></button>
+                            <button class="dot dot_green"></button>
+                        </div>
+                        <div class="projects_card-img-container"><img src="./assets/images/blog.png" class="projects_card-img" alt="Blog Hacking"></div>
+                        <div class="projects_text-container">
+                            <h3 class="projects_title">Hacking & Technical Blog</h3>
+                            <p class="projects_description">Plataforma de contenido técnico centrada en ciberseguridad y hacking ético. Maquetada desde cero con enfoque en lectura confortable, resaltado de sintaxis y arquitectura ultra ligera.</p>
+                        </div>
+                        <a href="#projects" class="projects_card-link progress">En proceso</a>
+                    </article>
+                </div>
+            </article>
+        </section>
+        <section id="aboutme" class="section aboutme_section">
+            <span class="section_tag">Sobre mi</span>
+            <article class="article aboutme_article">
+                <h2 class="title aboutme_title">Diseño, programo y soluciono problemas en la web</h2>
+                <h3 class="subtitle aboutme_subtitle">¡Hola! Soy Ángel Rivero.</h3>
+                <p class="text aboutme_description">Me gusta programar, diseñar interfaces limpias y resolver problemas mediante el código. Me enfoco en construir landing pages y sitios web desde cero, asegurándome de que cada proyecto no solo se vea bien, sino que funcione de forma fluida en cualquier dispositivo.</p>
+                <p class="text aboutme_description">Disfruto transformar ideas o necesidades de un negocio en una presencia web real: me encargo del maquetado, la optimización visual, la configuración técnica (dominio y hosting) y el mantenimiento para que todo corra sin fallas.</p>
+                <p class="text aboutme_description">Además, tengo un fuerte interés en la ciberseguridad y el hacking ético, lo que me ayuda a pensar en la estructura de mis proyectos con un criterio técnico más completo y ordenado.</p>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <span class="copyright">© 2026 Ángel Rivero. Todos los derechos reservados.</span>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>

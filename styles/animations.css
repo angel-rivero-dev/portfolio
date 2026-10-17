@@ -1,0 +1,50 @@
+@keyframes bg_glow1 {
+    0% {
+        left: 50%;
+        top: 50%;
+    }
+
+    50% {
+        left: 55%;
+        top: 53%;
+    }
+
+    100% {
+        left: 50%;
+        top: 50%;
+    }
+}
+
+@keyframes bg_glow2 {
+    0% {
+        left: 20%;
+        top: 20%;
+    }
+
+    50% {
+        left: 35%;
+        top: 25%;
+    }
+
+    100% {
+        left: 20%;
+        top: 20%;
+    }
+}
+
+@keyframes bg_glow3 {
+    0% {
+        left: 20%;
+        top: 80%;
+    }
+
+    50% {
+        left: 30%;
+        top: 75%;
+    }
+
+    100% {
+        left: 20%;
+        top: 80%;
+    }
+}
