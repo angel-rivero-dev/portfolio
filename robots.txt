@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://angel-rivero-dev.github.io/portfolio/sitemap.xml
